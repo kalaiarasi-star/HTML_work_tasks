@@ -1,0 +1,1 @@
+This repository contains three HTML projects designed to help beginners learn and practice core web development concepts. Each project focuses on different aspects of HTML and CSS, from basic structure to interactive tables and forms.
