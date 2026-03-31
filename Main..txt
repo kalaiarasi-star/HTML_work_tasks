@@ -1,6 +1,0 @@
-import java.util.*;
-public class solution{
-   public void main(string[]args){
-        System.out.print("Hello World!");
-}
-}
