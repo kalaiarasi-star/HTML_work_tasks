@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Employee Management System</h1>
+        <button class="btn add-btn">Add Employee</button>
+    </header>
+
+    <div class="container">
+        <!-- Employee Input Form Table -->
+        <div class="form-table">
+            <h2>Add New Employee</h2>
+            <table>
+                <tr>
+                    <td><label for="empID">Employee ID</label></td>
+                    <td><input type="text" id="empID" placeholder="E101"></td>
+                </tr>
+                <tr>
+                    <td><label for="empName">Name</label></td>
+                    <td><input type="text" id="empName" placeholder="John Doe"></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth</label></td>
+                    <td><input type="date" id="dob"></td>
+                </tr>
+                <tr>
+                    <td><label for="dept">Department</label></td>
+                    <td><input type="text" id="dept" placeholder="IT"></td>
+                </tr>
+                <tr>
+                    <td><label for="skill">Skill</label></td>
+                    <td><input type="text" id="skill" placeholder="HTML, CSS"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button class="btn save-btn">Save</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Employee Display Table -->
+        <div class="display-table">
+            <h2>Employee Records</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Employee ID</th>
+                        <th>Name</th>
+                        <th>DOB</th>
+                        <th>Department</th>
+                        <th>Skill</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>E101</td>
+                        <td>Kalaiarasi S</td>
+                        <td>1998-03-15</td>
+                        <td>HR</td>
+                        <td>Communication</td>
+                        <td>
+                            <button class="btn update-btn">Update</button>
+                            <button class="btn delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>E102</td>
+                        <td>Ravi Kumar</td>
+                        <td>1995-06-22</td>
+                        <td>IT</td>
+                        <td>JavaScript</td>
+                        <td>
+                            <button class="btn update-btn">Update</button>
+                            <button class="btn delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

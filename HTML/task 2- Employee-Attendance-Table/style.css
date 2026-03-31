@@ -1,0 +1,38 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Alternating row colors */
+table tr:nth-child(even) {
+    background-color: #e8f0fe;
+}
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Hover effect */
+table tr:hover {
+    background-color: #d9e2ec;
+    cursor: pointer;
+}
+
+/* Attendance markers */
+td.present::before {
+    color: green;
+    font-weight: bold;
+}
+
+td.absent::before {
+    color: red;
+    font-weight: bold;
+}

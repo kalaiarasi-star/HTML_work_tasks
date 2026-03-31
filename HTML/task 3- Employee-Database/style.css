@@ -1,0 +1,128 @@
+/* General Body & Font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #333;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a90e2;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #357ab7;
+}
+
+/* Flex container for tables */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Form Table */
+.form-table table {
+    border-collapse: collapse;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.form-table table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.form-table table input {
+    width: 100%;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Display Table */
+.display-table table {
+    border-collapse: collapse;
+    width: 600px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.display-table th, .display-table td {
+    padding: 12px;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+.display-table th {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.display-table tr:nth-child(even) {
+    background-color: #f0f4f8;
+}
+
+.display-table tr:hover {
+    background-color: #d9e2ec;
+}
+
+/* Action Buttons */
+.update-btn {
+    background-color: #ffc107;
+    margin-right: 5px;
+}
+
+.update-btn:hover {
+    background-color: #e0a800;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .display-table table, .form-table table {
+        width: 90%;
+    }
+}
