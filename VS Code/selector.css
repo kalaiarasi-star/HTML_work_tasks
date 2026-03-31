@@ -1,0 +1,43 @@
+p{
+    color:rgb(0, 64, 255)
+}
+/* Id selector*/
+#wt{
+    color:chartreuse
+}
+
+#wd{
+    color:darkred
+}
+/* class selector */
+.ab{
+    background-color: darkviolet;
+}
+input[type=password]{
+    border: 5px solid pink;
+}
+/* contain with */
+a[href*=google]{
+    color: green;
+}
+
+/* grouping selection*/
+h2,p,h3{
+    color:darkmagenta
+}
+
+div p{
+    color: rgb(165, 42, 75);
+}
+
+div>p{
+    color:rgb(255, 98, 0)
+}
+
+/* sibling{+,~}*/
+h2~p{
+    color: blue;
+    background-color: aquamarine;
+}
+
+

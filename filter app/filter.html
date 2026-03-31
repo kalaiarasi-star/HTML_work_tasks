@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro Camera App</title>
+<link rel="stylesheet" href="filter.css">
+</head>
+
+<body>
+
+<header>
+<h1>📸 Pro Camera</h1>
+
+<div class="tabs">
+<button onclick="openTab('home')">Home</button>
+<button onclick="openTab('camera')">Camera</button>
+<button onclick="openTab('gallery')">Gallery</button>
+<button onclick="toggleTheme()">🌙</button>
+</div>
+</header>
+
+<!-- HOME -->
+
+<div id="home" class="tab active">
+<h2>Welcome to Pro Camera</h2>
+<p>Capture photos, apply filters, and share instantly.</p>
+</div>
+
+<!-- CAMERA -->
+
+<div id="camera" class="tab">
+
+<div class="camera-box">
+
+<div id="frame" class="frame">
+<video id="video" autoplay playsinline></video>
+</div>
+
+</div>
+
+<div class="controls">
+
+<button onclick="capturePhoto()">📸 Capture</button>
+<button onclick="startRecording()">🎥 Record</button>
+<button onclick="stopRecording()">⏹ Stop</button>
+<button onclick="switchCamera()">🔄 Switch</button>
+
+</div>
+
+<h3>Filters</h3>
+
+<div class="filters">
+
+<button onclick="setFilter('none')">Normal</button>
+<button onclick="setFilter('grayscale(100%)')">B&W</button>
+<button onclick="setFilter('sepia(100%)')">Sepia</button>
+<button onclick="setFilter('invert(100%)')">Invert</button>
+<button onclick="setFilter('contrast(200%)')">Contrast</button>
+<button onclick="setFilter('brightness(150%)')">Bright</button>
+<button onclick="setFilter('blur(3px)')">Blur</button>
+<button onclick="setFilter('hue-rotate(90deg)')">Shift</button>
+
+</div>
+
+</div>
+<div class="recording-timer" id="timer">00:00</div>
+
+<video id="video" autoplay playsinline></video>
+
+<!-- GALLERY -->
+
+<div id="gallery" class="tab">
+
+<h2>Photo Gallery</h2>
+
+<div id="photoGallery"></div>
+
+</div>
+
+<canvas id="canvas" style="display:none;"></canvas>
+
+<script src="filter.js"></script>
+
+</body>
+</html>
